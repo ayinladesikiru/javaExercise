@@ -28,9 +28,14 @@ public class Car {
         return year;
     }
 
+    public void discount(int discountPercent){
+        double discount = price * discountPercent / 100;
+        price -= discount;
+    }
+
     public void setPrice(){
-        if (price > 0)
-        this.price = price;
+        if (price > 0) {
+        }
     }
 
     public double getPrice(){
